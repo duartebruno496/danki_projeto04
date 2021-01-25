@@ -32,7 +32,32 @@ header .logo img{
 
 nav.menu-mobile{
     float: right;
+    width: 28px;
+    height: 28px;
+    margin-top: 7px;
+    cursor: pointer;
+    background-image: url('../images/menu-mobile.png');
+    background-size: 100% 100%;
     display: none;
+}
+
+nav.menu-mobile ul{
+    display: none;
+    z-index: 999;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    background-color: white;
+}
+
+nav.menu-mobile ul li{
+    text-transform: uppercase;
+}
+
+nav.menu-mobile ul li{
+    padding: 10px 0;
 }
 
 header nav.menu-desktop{
@@ -78,7 +103,7 @@ header ul a{
 /**Servicos**/
 
 section.servicos > .container .box-servico {
-    background-image: url('../images/icone_dente.png');   
+    background-image: url('../images/icone_dente.png');
     background-size: 18px 18px;
     background-position: center calc(100% - 5px);
     background-repeat: no-repeat;
@@ -104,7 +129,7 @@ section.servicos > .container .box-servico p{
     color: white;
     margin-top: 8px;
     font-weight: normal;
-    font-size: 14px;    
+    font-size: 14px;
 }
 
 section.servicos > .container .box-servico:nth-of-type(1){
@@ -178,6 +203,24 @@ section.perfil-container .texto-perfil p{
 
 /**/
 
+/*Videos*/
+
+section.videos{
+    padding: 50px 0;
+}
+
+section.videos .box-video{
+    float: left;
+    width: 33.3%;
+    background-color: green;
+    padding-top: calc(33.3% * 0.6);
+}
+
+
+
+/**/
+
+
 
 @media screen and (max-width: 768px){
 
@@ -196,25 +239,31 @@ section.perfil-container .texto-perfil p{
     section.servicos > .container .box-servico:nth-of-type(1){
         width: 90%;
         max-width: 350px;
-        padding: 30px 2%;        
+        padding: 30px 2%;
     }
-    
+
     section.servicos > .container .box-servico:nth-of-type(2){
         width: 94%;
         max-width: 380px;
-        padding: 40px 2%;        
+        padding: 40px 2%;
     }
-    
+
     section.servicos > .container .box-servico:nth-of-type(3){
         width: 90%;
         max-width: 350px;
-        padding: 30px 2%;        
+        padding: 30px 2%;
     }
-   
+
+    section.perfil-container .perfil-wraper{
+      padding-top: 0;
+    }
+
 
     section.perfil-container .perfil-wraper2{
+        height: auto;
+        position: static;
         text-align: center;
-        display: inline-block;               
+        display: inline-block;
     }
 
     section.perfil-container .img-perfil{
@@ -232,17 +281,23 @@ section.perfil-container .texto-perfil p{
     }
 
     @media screen and (max-width: 580px){
+      nav.menu-destop{
+          display: none;
+      }
         section.perfil-container .img-perfil{
             width: 80%;
-            padding-top: 110%;            
+            padding-top: 110%;
         }
     }
 
     @media screen and (max-width: 480px){
+      nav.menu-destop{
+          display: none;
+      }
         header .logo img{
             width: 200px;
         }
     }
-   
+
 
 }
