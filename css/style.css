@@ -77,7 +77,7 @@ header nav.menu-desktop ul li{
 }
 
 header ul a{
-    color: #b4b4b4;
+    color: #3b3b3b;
     text-decoration: none;
 }
 
@@ -135,20 +135,20 @@ section.servicos > .container .box-servico p{
 section.servicos > .container .box-servico:nth-of-type(1){
     width: 30%;
     padding: 30px 2%;
-    background-color: #576975;
+    background-color: rgb(49, 49, 133);
 }
 
 section.servicos > .container .box-servico:nth-of-type(2){
     width: 40%;
     padding: 60px 2%;
-    background-color: #688293;
+    background-color: rgb(49, 49, 133);
     background-image: none;
 }
 
 section.servicos > .container .box-servico:nth-of-type(3){
     width: 30%;
     padding: 30px 2%;
-    background-color: #576975;
+    background-color: rgb(49, 49, 133);
 }
 
 /**/
@@ -191,12 +191,12 @@ section.perfil-container .texto-perfil{
 }
 
 section.perfil-container .texto-perfil h2{
-    color: #698293;
+    color: #3b3b3b;
     font-size: 18px;
 }
 
 section.perfil-container .texto-perfil p{
-    color: #4b4b4b;
+    color: #3b3b3b;
     font-size: 14px;
     margin-top: 8px;
 }
@@ -239,7 +239,7 @@ section.tratamentos .tratamento-container{
 }
 
 section.tratamentos h2{
-    color: #698293;
+    color: #3b3b3b;
     text-align: center;
     font-size: 18px;
 }
@@ -254,13 +254,13 @@ section.tratamentos .container{
 
 .tratamento-single h2{
     font-size: 18px;
-    color: #737373;
+    color: #3b3b3b;
 }
 
 .tratamento-single p{
     padding: 10px 0;
     font-size: 13px;
-    color: #b4b4b4;
+    color: #3b3b3b;
 }
 
 
@@ -269,7 +269,7 @@ section.tratamentos .container{
 /*Depoimentos*/
 
 section.depoimentos h2{
-    color: #698293;
+    color: #3b3b3b;
     text-align: center;
     font-size: 18px;
 }
@@ -287,7 +287,7 @@ section.depoimentos .depoimento-single{
 
 .depoimento-single quote{
     font-size: 15px;
-    color: #b4b4b4;
+    color: #3b3b3b;
 }
 
 .depoimento-single .nome-depoimento{
@@ -304,12 +304,70 @@ section.depoimentos .depoimento-single{
     position: relative;
     top: 4px;
     font-size: 13px;
-    color: #b4b4b4;
+    color: #3b3b3b;
     display: inline-block;
     vertical-align: top;
 }
 
 /**/
+
+/*Social*/
+
+.instagram-chamada{
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+    background: #98A5AE;
+}
+
+.instagram-chamada p{
+    line-height: 23px;
+    color: white;
+    padding: 10px 0;
+    font-size: 13px;
+}
+
+.mosaico-social{
+    float: left;
+    width: 100%;
+}
+
+.img-mosaico-single-social{
+    float: left;
+    width: calc(100% / 9);
+    padding-top: calc(100% / 9);
+    background-color: blue;
+    border: 6px solid white;
+}
+
+.facebook-chamada{
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+    background: #576975;
+}
+
+.facebook-chamada p{
+    line-height: 23px;
+    color: white;
+    padding: 10px 0;
+    font-size: 13px;
+}
+
+/**/
+
+@media screen and (max-width: 1024px){
+    .img-mosaico-single-social{
+        width: calc(100% / 6);
+        padding-top: calc(100% / 6);      
+    }
+
+    .mosaico-social > div:nth-of-type(1n+7){
+        display: none;
+    }
+}
 
 
 @media screen and (max-width: 768px){
@@ -378,7 +436,8 @@ section.depoimentos .depoimento-single{
         float: none;      
         width: 70%; 
         display: inline-block;
-        padding-top: calc(70% * 0.6);       
+        padding-top: calc(70% * 0.6);     
+        
     }
     
     
